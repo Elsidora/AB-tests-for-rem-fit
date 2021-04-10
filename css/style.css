@@ -1,0 +1,103 @@
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .page-wrapper .page-header-v3 {
+    display : flex;
+    flex-direction : column-reverse;
+  }
+
+  .page-wrapper .page-header-v3 .page-header .header.content {
+    width : 100%;
+    min-height : 60px;
+    position : relative !important;
+  }
+
+  .page-wrapper .page-header-v3 .page-header .header.content .desktop-logo {
+    position : absolute;
+    margin : 0px auto;
+    left : 0px;
+    right : -36px;
+  }
+
+  .page-wrapper .page-header-v3 .topmessage .promo-below-header {
+    line-height : 120%;
+    padding-top : 5px;
+    padding-bottom : 5px;
+  }
+
+  .goods {
+    border-bottom : 1px solid rgb(230, 230, 230);
+    padding : 0px;
+    margin : 0px;
+  }
+
+  .goods .goods-list {
+    width : 100vw;
+    display : flex;
+    flex-wrap : nowrap;
+    padding-top : 10px;
+    padding-bottom : 10px;
+    padding-right : 0px;
+    padding-left : 5px;
+    margin : 0px auto;
+    overflow-x : auto !important;
+  }
+
+  .goods .goods-list::-webkit-scrollbar {
+    height : 4px;
+    display : block !important;
+  }
+
+  .goods .goods-list::-webkit-scrollbar-track {
+    background : rgb(230, 230, 230);
+  }
+
+  .goods .goods-list::-webkit-scrollbar-thumb {
+    background-color : rgb(128, 128, 128);
+  }
+
+  .goods .goods-item {
+    flex-grow : 1;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    margin : 0px;
+    padding : 0px;
+    border-right : 1px solid rgb(230, 230, 230);
+  }
+
+  .goods .goods-item:last-child {
+    border-right : none;
+  }
+
+  .goods .goods-link {
+    display : flex;
+    flex-direction : column;
+    justify-content : center;
+    align-items : center;
+    width : 110px;
+    min-height : 80px;
+    margin : 0px;
+    padding : 0px 10px;
+  }
+
+  .goods .goods-imagewrap {
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    flex-grow : 1;
+    width : auto;
+    height : auto;
+    max-height : 120px;
+  }
+
+  .goods .goods-image {
+    width : 110px;
+    height : auto;
+    object-fit : cover;
+  }
+
+  .goods .goods-title {
+    font-size : 12px;
+    font-weight : 400;
+    margin : 0px;
+  }
+}
