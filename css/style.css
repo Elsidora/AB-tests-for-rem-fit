@@ -1,0 +1,197 @@
+@media (max-width: 767px) {
+
+  /* вспомогательные стили с сайта чуть разбавленные моими */
+
+  html {
+    font-size: 62.5%;
+    -webkit-text-size-adjust: 100%;
+
+  }
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    display: block;
+  }
+
+  body {
+    color: #180000;
+    font-family: 'Nunito',sans-serif;
+    font-style: inherit;
+    font-weight: 400;
+    line-height: 1.42857143;
+    font-size: 1.6rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav ul {
+    list-style: none;
+  }
+
+  
+  .navigation {
+    background: #f0f0f0;
+    box-sizing: border-box;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 0;
+
+  }
+
+  nav .ui-menu {
+    margin: 0;
+    padding: 0 20px;
+    width: 100%;
+    background-color: #fff;
+  }
+
+
+  .nav-sublist {
+    font-family: "Nunito", sans-serif;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  
+
+  .megamenu,
+  .nav-subitem {
+    padding: 0;
+    margin: 0;
+  }
+
+  .navigation .level0:not(:first-child) {
+    border-top: 1px solid #d1d1d1;
+  }
+
+  .navigation .parent .level-top {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    font-weight: 700;
+    color: #000;
+    padding: 8px 48px 8px 15px;
+  }
+
+  .navigation .parent .level-top::after {
+    line-height: inherit;
+    color: inherit;
+    position: absolute;
+    content: '\e622';
+    right: 10px;
+    font-size: 1.6rem;
+    font-family: 'luma-icons';
+    vertical-align: middle;
+    display: inline-block;
+    font-weight: 400;
+    overflow: hidden;
+    speak: none;
+    text-align: center;
+  } 
+
+  .navigation .megamenu.level0 .level0 {
+    border-top: 1px solid #f7f7f7;
+  }
+
+  .navigation .megamenu.level0 .submenu {
+    border: 0;
+    padding: 15px 0;
+  }
+
+  .navigation .level0 .submenu {
+    background-color: #fff !important;
+  }
+
+
+  /* мои стили для выпадашки */
+
+  .navigation .nav-subitem {
+    margin-bottom: 20px;
+  }
+
+  .navigation .nav-link {
+    padding: 15px 0;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navigation .nav-inner {
+    display: none;
+    text-align: center;
+    margin: 0;
+    animation: nav-open .5s ease-out both;
+  }
+
+  .navigation .nav-inner:first-child {
+    display: block;
+  }
+
+  .navigation .nav-active {
+    display: block;
+    transition: all .3s ease-in-out;
+  }
+  
+  .navigation .nav-sublist {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .navigation .nav-sublink {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #000;
+    text-decoration: none;
+    width: 120px;
+    min-height: 90px;
+    margin: 0;
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  .navigation .nav-imagewrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    width: auto;
+    height: auto;
+    max-height: 130px;
+  }
+
+  .navigation .nav-image {
+    width: 120px;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .navigation .nav-subtitle {
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .navigation .nav-shop {
+    display: block;
+    padding: 10px 20px;
+    margin: 0 auto;
+    color: #000;
+    text-decoration: underline;
+  }
+
+  @keyframes nav-open {
+    0% {
+      transform: translateX(100vw);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+}
